@@ -1,3 +1,2 @@
-# resume
-### My Resume
+# Resume
 This is my resume!
