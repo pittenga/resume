@@ -1,4 +1,5 @@
 ---
+title: index
 ---
 {% for asset in site.github.releases.assets %}
   {% if asset.browser_download_url.endswith('.pdf') %}
