@@ -11,7 +11,7 @@ Hello World!
 {% endfor %}
 {% endfor %}
 
-{% for asset in site.github.releases['latest'] %}
+{% for asset in site.github.releases[1] %}
   {{ asset.browser_download_url }}
   {% if asset.browser_download_url.endswith('.pdf') %}
     <a href='{{ asset.browser_download_url }}'>{{ asset.browser_download_url }}</a>
