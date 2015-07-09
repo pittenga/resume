@@ -1,3 +1,8 @@
 <html>
-<meta http-equiv="refresh" content="0; URL='{{ site.github.releases.assets.browser_download_url }}'" />
+{% for asset in site.github.releases.assets %}
+  {% if asset.browser_download_url.endswith('.pdf')}
+  <meta http-equiv="refresh" content="0; URL='{{ asset.browser_download_url }}'" />
+
+  {% endif %}
+{% endfor %}
 </html>
