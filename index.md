@@ -2,7 +2,7 @@
 title: index
 ---
 Hello World!
-{% for asset in site.github.releases.assets %}
+{% for asset in site.github.releases.latest.assets %}
   {{ asset.browser_download_url }}
   {% if asset.browser_download_url.endswith('.pdf') %}
     <a href='{{ asset.browser_download_url }}'>{{ asset.browser_download_url }}</a>
