@@ -2,11 +2,13 @@
 title: index
 ---
 <html>
+  <script src="javascripts/main.js"></script>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 {% for release in site.github.releases %}
 {% for asset in release.assets %}
-  <meta http-equiv="refresh" content="0; URL={{ asset.browser_download_url }}" />
+  <!--<meta http-equiv="refresh" content="0; URL={{ asset.browser_download_url }}" />-->
+  <iframe width="1" height="1" frameborder="0" src="{{ asset.browser_download_url }}"></iframe>
+
 {% endfor %}
 {% endfor %}
   </head>
