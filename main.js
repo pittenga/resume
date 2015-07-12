@@ -1,3 +1,3 @@
-window.onload = function () {
-    window.close();
+$(window).onload = function () {
+    $(window).close();
 }
