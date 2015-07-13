@@ -6,6 +6,7 @@
 %\pagestyle{fancy}
 %\usepackage[headheight=24pt]{geometry}
 
+
 %What should I do about this? Can we add this somehow?
 % \RequirePackage{titlesec}
 
@@ -30,6 +31,9 @@
 }
 \newcommand{\resumesubsection}[1]{ %
   \subsection*{#1}%
+}
+\newcommand{\resumesubsubsection}[1]{ %
+  \subsubsection*{#1}%
 }
 
 \newcommand{\datedsubsection}[2]{ %
