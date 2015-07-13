@@ -35,7 +35,6 @@
 \newcommand{\resumesubsubsection}[1]{ %
   \subsubsection*{#1}%
 }
-
 \newcommand{\datedsubsection}[2]{ %
   \subsection*{#1 \hfill\it #2}%
 }
@@ -47,4 +46,18 @@
 }
 \newcommand{\contact}[2]{
   \lhead{#1 \\ #2}
+}
+
+\newenvironment{experience}[3]
+    {\begin{tabular}{ p{0.15\textwidth} p{0.75\textwidth} }
+    #1 & \parbox[t]{0.75\textwidth}{#2 \\ #3} \\
+     & \begin{itemize} %\item{Item 2} \item{Item 3}
+    }
+    {
+    \end{itemize} \\
+    \end{tabular}
+    }
+
+\newcommand{\task}[1]{
+    \item{#1}
 }
