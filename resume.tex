@@ -1,27 +1,21 @@
 % hello.tex - Our first LaTeX example!
 
-\documentclass{article}
-\title{Resume}
-\author{Aaron Pittenger}
-\usepackage[letterpaper, portrait, headheight=24pt, top=1in, bottom=1in, left=0.5in, right=0.5in]{geometry}
-\usepackage{fancyhdr}
-
+\documentclass{resume}
+\usepackage[headheight=24pt, letterpaper, portrait, top=1in, bottom=1in, left=0.5in, right=0.5in]{geometry}
 \pagestyle{fancy}
 
-\lhead{pittenger.aaron@gmail.com}
-\chead{\fontsize{17}{12} \selectfont Aaron Pittenger}
-\rhead{2665 Burgen Ave NE \\ Grand Rapids, MI 49525}
-
 \begin{document}
+  \name{Aaron Pittenger}
+  \address{2665 Burgen Ave NE}{Grand Rapids, MI 49525}
+  \contact{pittenger.aaron@gmail.com}{+1.517.937.5543}
 
-\pagenumbering{gobble}
-% * denotes no numbers
-\section*{Section}
+  \pagenumbering{gobble}
 
-Hello World!
+  \resumesection{Education}
 
-\subsection*{Subsection}
+  \datedsubsection{Grand Valley State University}{2010-2015}
 
-Structuring a document is easy!
+  Structuring a document is easy!
+
 
 \end{document}
