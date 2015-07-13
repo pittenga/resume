@@ -129,3 +129,7 @@ sympy-plots-for-*.tex/
 *.pdf
 *.dvi
 *.ps
+
+# Jekyll site data
+_site
+Gemfile.lock
