@@ -49,8 +49,8 @@
 }
 
 \newenvironment{experience}[3]
-    {\begin{tabular}{ p{0.15\textwidth} p{0.75\textwidth} }
-    #1 & \parbox[t]{0.75\textwidth}{#2 \\ #3} \\
+    {\begin{tabular}{ p{0.15\textwidth} p{0.70\textwidth} }
+    #1 & \parbox[t]{0.70\textwidth}{#2 \\ #3} \\
      & \begin{itemize} %\item{Item 2} \item{Item 3}
     }
     {
@@ -60,4 +60,15 @@
 
 \newcommand{\task}[1]{
     \item{#1}
+}
+\newenvironment{skills}[1]
+    {\begin{tabular}{ p{0.15\textwidth} p{0.75\textwidth} }
+    #1 &
+    }
+    {
+    \end{tabular}
+    }
+
+\newcommand{\skill}[1]{
+    #1,
 }
