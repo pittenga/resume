@@ -49,7 +49,8 @@
 }
 
 \newenvironment{experience}[3]
-    {\begin{tabular}{ p{0.15\textwidth} p{0.75\textwidth} }
+    {\par \noindent
+    \begin{tabular}{ p{0.15\textwidth} p{0.75\textwidth} }
     #1 & \parbox[t]{0.70\textwidth}{#2 \\ #3} \\
      & \begin{itemize} %\item{Item 2} \item{Item 3}
     }
@@ -62,9 +63,10 @@
     \item{#1}
 }
 \newenvironment{skills}
-    {\begin{tabular}{ p{0.1\textwidth} p{0.8\textwidth} }
+    {\par \noindent
+    \begin{tabular}{ p{0.1\textwidth} p{0.8\textwidth} }
     }
     {
-    
+
     \end{tabular}
     }
