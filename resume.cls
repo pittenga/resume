@@ -2,6 +2,7 @@
 \ProvidesClass{resume}[7/12/2015 Custom class to build a resume]
 \LoadClass{article}
 \RequirePackage{fancyhdr}
+\RequirePackage{enumitem}
 % Can we get these into the class so i don't have to add them to the .tex file?
 %\pagestyle{fancy}
 %\usepackage[headheight=24pt]{geometry}
@@ -52,7 +53,7 @@
     {\par \noindent
     \begin{tabular}{ p{0.15\textwidth} p{0.75\textwidth} }
     #1 & \parbox[t]{0.70\textwidth}{#2 \\ #3} \\
-     & \begin{itemize} %\item{Item 2} \item{Item 3}
+     & \begin{itemize}[noitemsep,nolistsep]
     }
     {
     \end{itemize} \\
@@ -67,6 +68,5 @@
     \begin{tabular}{ p{0.1\textwidth} p{0.8\textwidth} }
     }
     {
-
     \end{tabular}
     }
