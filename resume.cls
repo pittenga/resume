@@ -52,12 +52,14 @@
 \newenvironment{experience}[3]
     {\par \noindent
     \begin{tabular}{ p{0.15\textwidth} p{0.75\textwidth} }
+    
     #1 & \parbox[t]{0.70\textwidth}{#2 \\ #3} \\
      & \begin{itemize}[noitemsep,nolistsep]
     }
     {
-    \end{itemize} \\
+    \end{itemize}
     \end{tabular}
+    \vspace{-1em}
     }
 
 \newcommand{\task}[1]{
