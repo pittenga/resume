@@ -49,11 +49,20 @@
   \lhead{#1 \\ #2}
 }
 
+\newcommand{\education}[3]{
+  \par \noindent
+  \begin{tabular}{ p{0.10\textwidth} p{0.8\textwidth} }
+
+  #1 & \parbox[t]{0.7\textwidth}{#2 \\ \it #3} \\
+  \end{tabular}
+  \vspace{1em}
+}
+
 \newenvironment{experience}[3]
     {\par \noindent
-    \begin{tabular}{ p{0.15\textwidth} p{0.75\textwidth} }
-    
-    #1 & \parbox[t]{0.70\textwidth}{#2 \\ #3} \\
+    \begin{tabular}{ p{0.10\textwidth} p{0.8\textwidth} }
+
+    #1 & \parbox[t]{0.7\textwidth}{#2 \\ \it #3} \\
      & \begin{itemize}[noitemsep,nolistsep]
     }
     {
