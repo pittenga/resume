@@ -9,7 +9,7 @@
 %\usepackage[headheight=24pt]{geometry}
 
 \newcommand{\resumesection}[1]{ %
-  \section*{#1}%
+  \vspace{-1em}  \section*{#1} 
 }
 \newcommand{\resumesubsection}[1]{ %
   \subsection*{#1}%
@@ -36,15 +36,14 @@
 
   #1 & \parbox[t]{0.7\textwidth}{#2 \\ \it #3} \\
   \end{tabular}
-  \vspace{1em}
+  \vspace{0.5em}
 }
 
 \newenvironment{experience}[3]
     {\par \noindent
     \begin{tabular}{ p{0.10\textwidth} p{0.8\textwidth} }
-
     #1 & \parbox[t]{0.7\textwidth}{#2 \\ \it #3} \\
-     & \begin{itemize}[noitemsep,nolistsep]
+     & \begin{itemize}[noitemsep,nolistsep] \vspace{-0.6em}
     }
     {
     \end{itemize}
