@@ -4,12 +4,13 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{enumitem}
 
+\renewcommand*{\familydefault}{\sfdefault}
 % Can we get these into the class so i don't have to add them to the .tex file?
 %\pagestyle{fancy}
 %\usepackage[headheight=24pt]{geometry}
 
 \newcommand{\resumesection}[1]{ %
-  \vspace{-1em}  \section*{#1} 
+  \vspace{-1em}  \section*{#1}
 }
 \newcommand{\resumesubsection}[1]{ %
   \subsection*{#1}%
@@ -56,7 +57,7 @@
 }
 \newenvironment{skills}
     {\par \noindent
-    \begin{tabular}{ p{0.1\textwidth} p{0.8\textwidth} }
+    \begin{tabular}{ p{\textwidth} }
     }
     {
     \end{tabular}

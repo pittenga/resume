@@ -2,6 +2,10 @@
 
 \documentclass{resume}
 \usepackage[headheight=24pt, letterpaper, portrait, top=1in, bottom=1in, left=0.5in, right=0.5in]{geometry}
+\usepackage{graphicx}
+
+
+\graphicspath{ {./img/} }
 \pagestyle{fancy}
 \fancyfoot[R]{Built with \LaTeX}
 \addtolength{\parskip}{-0.5mm}
@@ -55,14 +59,35 @@
   %TODO: Add additional interests and hone in on skills. Maybe add icons instead of language names
   \resumesection{Skills}
   \begin{skills}
-    Software: & Java, C/C++, Ada, Python, Lua, Assembly, Markup Languages, Linux BASH scripting, Make \\
+    \includegraphics[keepaspectratio, height=1cm]{c.png}
+    \includegraphics[keepaspectratio, height=1cm]{c++.png}
+    \includegraphics[keepaspectratio, height=1cm]{ada.png}
+    \includegraphics[keepaspectratio, height=1cm]{java.png}
+    \includegraphics[keepaspectratio, height=1cm]{objc.png}
+    \includegraphics[keepaspectratio, height=1cm]{python.png}
+    \includegraphics[keepaspectratio, height=1cm]{shell.png}
+    \includegraphics[keepaspectratio, height=1cm]{html.png}
+    \includegraphics[keepaspectratio, height=1cm]{latex.png}
+    \includegraphics[keepaspectratio, height=1cm]{lua.png}
+    \includegraphics[keepaspectratio, height=1cm]{linux.png}
+    \includegraphics[keepaspectratio, height=1cm]{apple.png}
+    \includegraphics[keepaspectratio, height=1cm]{windows.png}
+    \includegraphics[keepaspectratio, height=1cm]{ubuntu.png}
+    \includegraphics[keepaspectratio, height=1cm]{android_studio.png}
+    \includegraphics[keepaspectratio, height=1cm]{xcode.png}
+    \includegraphics[keepaspectratio, height=1cm]{atlassian.png}
+    \includegraphics[keepaspectratio, height=1cm]{eclipse.png}
+    \includegraphics[keepaspectratio, height=1cm]{git.png}
+    \includegraphics[keepaspectratio, height=1cm]{subversion.png}
+    \includegraphics[keepaspectratio, height=1cm]{gnu.png}
+    \includegraphics[keepaspectratio, height=1cm]{jenkins.png}
+    \includegraphics[keepaspectratio, height=1cm]{office.png}
+    \includegraphics[keepaspectratio, height=1cm]{virtualbox.png}
+    \includegraphics[keepaspectratio, height=1cm]{vmware.jpg} \\
   \end{skills}
-  \begin{skills}
-    Tools: & Unix Tools (grep, gcc, sed, diff, etc.), git, svn, Jenkins, Atlassian Tool Suite (Jira, Confluence, Stash, etc), Eclipse, \LaTeX, VirtualBox/vmware, Visual Studio, Microsoft Tool Suite \\
-  \end{skills}
-  \begin{skills}
-    Training: & GE Foundations of Leadership, GE Customer Technical Presentation Skills \\
-  \end{skills}
+
+  \resumesection{Training}
+  GE Foundations of Leadership, GE Customer Technical Presentation Skills
 
   \resumesection{Interests}
   SW Development Process, Dev Ops, Automated Build
