@@ -1,6 +1,13 @@
 % hello.tex - Our first LaTeX example!
 
-\documentclass[draft]{resume}
+%check to see if we defined the resume document class from the command line
+%if so, do nothing. If not, define it to be in draft mode.
+\makeatletter
+\@ifclassloaded{resume}
+  {}
+  {\documentclass[draft]{resume}}
+\makeatother
+
 \usepackage[headheight=24pt, headsep=10pt, letterpaper, portrait, top=1in, bottom=0.75in, left=0.5in, right=0.5in]{geometry}
 \usepackage{graphicx}
 
