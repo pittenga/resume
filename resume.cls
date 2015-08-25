@@ -40,10 +40,12 @@
   \vspace{0.5em}
 }
 
-\newenvironment{experience}[3]
+\newenvironment{experience}[4]
     {\par \noindent
-    \begin{tabular}{ p{0.10\textwidth} p{0.8\textwidth} }
-    #1 & \parbox[t]{0.7\textwidth}{#2 \\ \it #3} \\
+    \begin{tabular}{ l p{0.8\textwidth} r }
+    \parbox[b]{0.1\textwidth}{#1}
+     & \parbox[b]{0.7\textwidth}{#2 \\ \it #3}
+     & \parbox[b]{0.05\textwidth}{\includegraphics[keepaspectratio, height=5ex]{#4}} \\
      & \begin{itemize}[noitemsep,nolistsep] \vspace{-0.6em}
     }
     {
