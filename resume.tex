@@ -10,6 +10,7 @@
 
 \usepackage[headheight=24pt, headsep=10pt, letterpaper, portrait, top=1in, bottom=0.75in, left=0.5in, right=0.5in]{geometry}
 \usepackage{graphicx}
+\usepackage{hyperref}
 
 \graphicspath{ {./img/} }
 \pagestyle{fancy}
@@ -17,7 +18,7 @@
 \addtolength{\parskip}{-0.5mm}
 
 \begin{document}
-  \name{Aaron Pittenger}
+  \name{Aaron Pittenger \href{https://github.com/pittenga/resume}{\includegraphics[keepaspectratio, height=2ex]{github.png}}}
   \address{2665 Burgen Ave NE}{Grand Rapids, MI 49525}
   \contact{pittenger.aaron@gmail.com}{+1.517.937.5543}
 
@@ -32,14 +33,19 @@
   \resumesection{Experience}
   \begin{experience}{Jun 2014 - Present}{MichiganLabs - Grand Rapids, MI}{Application Developer}{ml.png}
     \task{iOS and Android architecture, design and implementation}
-    \task{GiveAWow and 360 Recognition - TerryBerry}
-    \task{Light of Life - LightOfLife}
+    \task{Published Apps:}
+    \begin{tasktable}
+      GiveAWow - TerryBerry & 360 Recognition - TerryBerry & Light of Life - LightOfLife TV \\
+      \href{https://play.google.com/store/apps/details?id=com.wow.android}{\includegraphics[keepaspectratio, height=4ex]{g_play.png}} \href{https://itunes.apple.com/us/app/give-a-wow!/id390576590?mt=8}{\includegraphics[keepaspectratio, height=4ex]{app_store.png}} & \href{https://play.google.com/store/apps/details?id=com.rec360.android}{\includegraphics[keepaspectratio, height=4ex]{g_play.png}} \href{https://itunes.apple.com/us/app/360-recognition/id765090144?mt=8}{\includegraphics[keepaspectratio, height=4ex]{app_store.png}} & \href{https://play.google.com/store/apps/details?id=com.michiganlabs.lightoflife&hl=en}{\includegraphics[keepaspectratio, height=4ex]{g_play.png}} \href{http://itunes.com/apps/com.michiganlabs.lightoflife}{\includegraphics[keepaspectratio, height=4ex]{app_store.png}} \\
+    \end{tasktable}
   \end{experience}
 
   %TODO: Make sure everything that should be in here is in here.
   \begin{experience}{Aug 2010 - Present}{GE Aviation - Grand Rapids, MI}{Lead Software Engineer, Software Engineer, Edison Engineering Development Program}{ge.png}
     \task{Lead SW development efforts on multiple projects including planning, forecasting, earned value management and milestone tracking}
     \task{Lead developer for multiple features on multiple projects}
+    \task{Embedded software developer utilizing VxWorks and Linux OS}
+    \task{Device driver implementation on multiple platforms}
     \task{Designed and created an automated testing/continuous integration plan for all projects}
   \end{experience}
 
@@ -55,8 +61,8 @@
   \end{experience}
 
   \begin{experience}{May 2008 - Aug 2008}{GE Healthcare - Waukesha, WI}{Service Methods Design Engineer - Intern}{ge.png}
-    \task{Programmed an illustrated replaceable parts list tool. Gathered pictures for it while enhancing the previous version and adding features requested by field personnel. (Patent Pending)}
-    \task{This tool saves GEHC about \$5.5 million in time wasted by field service personnel using the paper parts lists to look up replacement parts on machines. It also provides them alternate ways to look up replacement parts}
+    \task{Programmed an illustrated replaceable parts list tool (Patent Pending)}
+    \task{This tool saves GEHC about \$5.5 million in time wasted by field service personnel using the paper parts lists to look up replacement parts on machines}
     \task{Enhanced the look and feel of a System Error Log Viewer}
     \task{Prepared all necessary paperwork for the release of both tools mentioned above}
     \task{Hands-on training with writing validation and verification procedures on PET/CT Scanners}
@@ -93,9 +99,9 @@
   \end{skills}
 
   \resumesection{Training}
-  GE Foundations of Leadership, GE Customer Technical Presentation Skills
+  GE Foundations of Leadership, GE Customer Technical Presentation Skills, GE Leadership Development Course
 
   \resumesection{Interests}
-  SW Development Process, Dev Ops, Automated Build
+  SW Development Process, Dev Ops, Continuous Integration/Delivery
 
 \end{document}

@@ -22,7 +22,10 @@
   \subsection*{#1 \hfill\it #2}%
 }
 \newcommand{\name}[1]{
-  \chead{\fontsize{17}{12} \selectfont Aaron Pittenger}
+  \chead{\fontsize{17}{12} \selectfont #1}
+}
+\newcommand{\github}[1]{
+  \chead{\fontsize{17}{12} \selectfont #1}
 }
 \newcommand{\address}[2]{
   \rhead{#1 \\ #2}
@@ -56,6 +59,19 @@
 
 \newcommand{\task}[1]{
     \item{#1}
+}
+
+\newenvironment{tasktable}
+  {
+  \item[]
+  \begin{tabular}{ l | l | l }
+  }
+  {
+  \end{tabular}
+  }
+
+\newcommand{\emptytask}[1]{
+    \item[]{#1}
 }
 \newenvironment{skills}
     {\par \noindent
