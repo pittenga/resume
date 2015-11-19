@@ -2,9 +2,6 @@ addons:
   apt:
     packages:
     - texlive-latex-base
-#before_install:
-#- sudo apt-get update
-#- sudo apt-get install texlive-latex-base
 sudo: false
 script:
 - make final
