@@ -1,5 +1,5 @@
 before_install:
 - sudo apt-get update
-- sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+- sudo apt-get install texlive-latex-recommended
 script:
 - pdflatex resume.tex
