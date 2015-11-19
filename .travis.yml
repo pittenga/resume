@@ -1,5 +1,12 @@
 before_install:
 - sudo apt-get update
-- sudo apt-get install texlive-latex-recommended
+- sudo apt-get install texlive-latex-base
 script:
-- pdflatex resume.tex
+- make final
+deploy:
+  provider: releases
+  api_key:
+    secure: dBVmPQmbAXys+6cSIU3hE/DGKdY4dz4z8xXS4ItaPf5MpoEuPAEPZO0kcDYfhHkAJX8ZYgu0Zy8oTax89Z1hN78bD6ImJpeIZE/WRxJLHn+VgwocrghtatKwkryzTJSNgZsECmGSa1utwsu0at+qLYHXvHjgNNDQYS+o4D8TivAAvgYyAov7Pf7kTSVn0XKiTDw289RJ9Mp9j6PJD1qwNix0MzM+MA3NuO5qUrUdu/PDAAdMiC0uBz2lrmnBw4aph+pBAzmxqAgHaY7cO0+jbyolYFVs0gJ1COPngnvKcw6eA6zkbtvAK+fs8tVCGnsHSyYjWWnHxvOpvHE2o1pc+UFwPq9emcV5aMDEaBqFQ8XspivTmRtyyGKzfqanRVMy+dOQtrYfa0KRyoct+5NUfgdH3aLvbB84w5I7sHSrHvoYuBiZXHc1Ed0UHvI1LmhmvoBsgGqW5+zyNILW8vtBBjNk+9qjRURR7BvoyqXE/u6c1gVgiRJ1Vfxtzq4E8orjr2PjxnnzqVN4jxBSOY7+/xKPxLEJvIdSb0Nx16Kvd0ywvOxYiOzv9UfN2Kh8TdbN+7mLh3ae7K6SQZkF2vU2PY0OL7YTQwklptBjzCMvVnMqDih5LO/Jgm93m3gH77Fso3lUdatHqGC2YXYgmt14KqiJr3XGbgNeWIKakvgBodk=
+  file: resume.pdf
+  on:
+    tags: true
