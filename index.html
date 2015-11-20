@@ -4,18 +4,13 @@ title: index
 <html>
   <script src="main.js"></script>
   <head>
-    
-    
-{% for asset in site.github.releases.latest.assets %}
-asset.browser_download_url
-{% endfor %}
 
-{% for release in site.github.releases %}
-{% for asset in release.assets %}
+
+{% for asset in site.github.releases.latest.assets %}
   <!--<meta http-equiv="refresh" content="0; URL={{ asset.browser_download_url }}" />-->
   <iframe width="1" height="1" frameborder="0" src="{{ asset.browser_download_url }}"></iframe>
 
 {% endfor %}
-{% endfor %}
+
   </head>
 </html>
