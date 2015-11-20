@@ -5,12 +5,7 @@ title: index
   <script src="main.js"></script>
   <head>
 
-
-{% for asset in site.github.releases.latest.assets %}
-  <!--<meta http-equiv="refresh" content="0; URL={{ asset.browser_download_url }}" />-->
-  <iframe width="1" height="1" frameborder="0" src="{{ asset.browser_download_url }}"></iframe>
-
-{% endfor %}
+  <iframe width="1" height="1" frameborder="0" src="{{ site.github.releases[0].assets[0].browser_download_url }}"></iframe>
 
   </head>
 </html>
