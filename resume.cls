@@ -31,7 +31,7 @@
   \rhead{#1 \\ #2}
 }
 \newcommand{\contact}[2]{
-  \lhead{#1 \\ #2}
+  \lhead{\href{mailto:#1}{#1} \\ #2}
 }
 
 \newcommand{\education}[3]{
