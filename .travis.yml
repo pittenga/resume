@@ -1,7 +1,9 @@
 addons:
   apt:
     packages:
-    - texlive-full
+    - texlive-latex-base
+    - texlive-latex-recommended
+    - texlive-latex-extra
 sudo: false
 script:
 - make final
