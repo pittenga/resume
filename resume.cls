@@ -45,7 +45,7 @@
 
 \newenvironment{experience}[4]
     {\par \noindent
-    \begin{tabular}{ l p{0.8\textwidth} r }
+    \begin{tabular}{ l p{0.78\textwidth} r }
     \parbox[b]{0.1\textwidth}{#1}
      & \parbox[b]{0.7\textwidth}{#2 \\ \it #3}
      & \parbox[b]{0.05\textwidth}{\includegraphics[keepaspectratio, height=5ex]{#4}} \\
