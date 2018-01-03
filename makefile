@@ -10,3 +10,4 @@ draft:
 
 final:
 	pdflatex "\documentclass[final]{resume} \input{${RESUME_NAME}}"
+	open resume.pdf
