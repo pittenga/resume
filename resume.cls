@@ -38,7 +38,7 @@
   \par \noindent
   \begin{tabular}{ p{0.10\textwidth} p{0.8\textwidth} }
 
-  #1 & \parbox[t]{0.7\textwidth}{#2 \\ \it #3} \\
+  #1 & \parbox[t]{0.85\textwidth}{#2 \\ \it #3} \\
   \end{tabular}
   \vspace{0.5em}
 }
