@@ -56,7 +56,20 @@
     \end{tabular}
     \vspace{-1em}
     }
+  \newenvironment{experience2}[4]
+      {\par \noindent
 
+      \begin{tabular}{ l p{0.78\textwidth} r }
+      \parbox[b]{0.1\textwidth}{#1}
+       & \parbox[b]{0.7\textwidth}{#2 \\ \it #3}
+       & \multirow{2}{*}{\parbox[b]{0.05\textwidth}{\includegraphics[keepaspectratio, width=6ex]{#4}}} \\
+       & \begin{itemize}[noitemsep,nolistsep] \vspace{-0.6em}
+      }
+      {
+      \end{itemize}
+      \end{tabular}
+      \vspace{-1em}
+      }
 \newcommand{\task}[1]{
     \item{#1}
 }
